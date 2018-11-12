@@ -1,0 +1,34 @@
+<html>
+<body>
+
+<p>Required fields are <b>bold</b></p>
+<form action="contact.php" method="post">
+<p><b>Your Name:</b> <input type="text" name="yourname" id="yourname"><br />
+<b>E-mail:</b> <input type="text" name="email" id="email"><br />
+<b>Emergency Contact:</b> <input type="text" name="emergency" id="emergency"><br />
+<b>Age:</b> <input type="text" name="age" id="age"><br />
+
+<p><b>Gender:</b>
+<input type="radio" name="gender" value="male" id="value"> Male
+<input type="radio" name="gender" value="female" id="value"> Female
+<input type="radio" name="gender" value="other" id="value"> Other</p>
+
+<p><b>What Event are You Registering For?</b>
+<select name="event">
+<option value=""> -- Please select -- </option>
+<option>Long Course Olympic</option>
+<option>Yahoo</option>
+<option>10K</option>
+<option>Half Marathon</option>
+<option>Sprint</option>
+<option>Try-a-Tri</option>
+<option>I am registering as a Volunteer</option>
+</select>
+
+<p><b>Your comments:</b><br />
+<textarea name="comments" rows="10" cols="40"></textarea></p>
+
+<input type="submit" value="Send it!">
+</form>
+</body>
+</html>
