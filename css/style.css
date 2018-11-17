@@ -12,7 +12,7 @@ body {
 	position: relative;
 	width: 100%;
 }
-#header div ul {
+#header ul {
     max-width: 940px;
     min-height: 227px;
 	display: inline-block;
@@ -23,13 +23,13 @@ body {
     padding: 102px 0 20px;
     text-align: center;
 }
-#header div ul li {
+#header ul li {
 	display: inline-block;
 	margin: 0;
 	padding: 8px;
 	width: auto;
 }
-#header div ul li a {
+#header ul li a {
     color: #000000;
 	font-family: "Arial Black";
 	font-size: 18px;
@@ -41,14 +41,9 @@ body {
 	text-transform: uppercase;
 	width: auto;
 }
-#header div ul li.selected a, #header div ul li.selected a:hover {
+
+#header ul li a:hover {
 	color: #ff0000;
-}
-#header div ul li a:hover {
-	color: #ff0000;
-}
-#header div ul li ul {
-	display: none;
 }
 
 /*----------------------------------------body-h-styles---------------------------------------*/
@@ -61,25 +56,23 @@ body {
 	position: relative;
 	width: 100%;
 }
-#body.home div {
-	background: none;
+#body.home {
 	margin: 0;
 	max-width: none;
 	padding: 0 0 54px;
 	width: 100%;
 }
 h1 {
-	background: none;
 	margin: 0 auto;
 	max-width: 960px;
 	padding: 74px 0 0;
 }
-#body.home div.header div h1 {
+#body.home h1 {
 	background: none;
 	color: #000000;
 	display: block;
 	font-family: 'Arial Black';
-	font-size: 110px;
+	font-size: 70px;
 	font-weight: normal;
 	line-height: 96px;
 	margin: 0 auto 32px;
@@ -88,7 +81,7 @@ h1 {
 	text-transform: uppercase;
 	width: 89.5833%;
 }
-#body.home div.header div span {
+#body.home span {
 	display: block;
 	margin: 0 auto 52px;
 	max-width: 350px;
@@ -96,7 +89,7 @@ h1 {
 	padding: 0;
 	width: 37.4583%;
 }
-#body.home div.header div span a.register {
+#body.home span a.register {
 	border: 2px solid #000000;
 	color: #000000;
 	display: block;
@@ -112,6 +105,23 @@ h1 {
 	text-transform: uppercase;
 	width: 90%;
 }
+
+/*----------------------------------------text---------------------------------------*/
+
+#body p {
+	color: #000000;
+	display: block;
+	font-family: Arial;
+	font-size: 16px;
+	font-weight: normal;
+	letter-spacing: 0.01em;
+	line-height: 48px;
+	margin: 0 auto 37px;
+	padding: 0;
+	text-align: center;
+	width: 765px;
+}
+
 
 /*----------------------------------------sidenav---------------------------------------*/
 
