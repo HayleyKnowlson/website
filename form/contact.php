@@ -17,7 +17,24 @@ if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
 {
     show_error("E-mail address not valid");
 }
-
+if(isset($_POST['formSubmit']))
+{
+    $aEvents = $_POST['event'];
+    if(!isset($aeEvent))
+    {
+        echo("<p>You didn't select any events!</p>\n");
+    }
+    else
+    {
+        $nEvent = count($aEvent);
+        echo("<p>You selected $nEvent Events: ");
+        for($i=0; $i < $nEvent; $i++)
+        {
+            echo($aEvent[$i]) . " ");
+        }
+        echo("</p>");
+    }
+}
 $message = "Hello!
 
 Your contact form has been submitted by:
@@ -30,7 +47,7 @@ $comments
 
 End of message
 ";
-/*echo $message;
+
 /* Send the message using mail() function */
 mail($myemail, "Registration", $message);
 

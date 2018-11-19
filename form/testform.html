@@ -13,16 +13,15 @@
 <input type="radio" name="gender" value="female" id="value"> Female
 <input type="radio" name="gender" value="other" id="value"> Other</p>
 
-<p><b>What Event are You Registering For?</b>
-<select name="event">
-<option value=""> -- Please select -- </option>
-<option>Long Course Triathlon -- $240</option>
-<option>Olympic -- $110</option>
-<option>10K -- $50</option>
-<option>Half Marathon -- $75</option>
-<option>Sprint -- $90</option>
-<option>Try-a-Tri $65</option>
-<option>I am registering as a Volunteer</option>
+    <label for='formEvent[]'><b>What Event are You Registering For?</b> (hold CTRL to select multiple events)</label><br>
+<select multiple="multiple" name="event[]">
+<option value="long">Long Course Triathlon -- $240</option>
+<option value="olympic">Olympic -- $110</option>
+<option value="10k">10K -- $50</option>
+<option value="half">Half Marathon -- $75</option>
+<option value="sprint">Sprint -- $90</option>
+<option value="try">Try-a-Tri $65</option>
+<option value="volunteer">I am registering as a Volunteer</option>
 </select>
 
 <p><b>Your comments:</b><br />
