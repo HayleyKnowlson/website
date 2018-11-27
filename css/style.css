@@ -69,7 +69,7 @@ h1 {
 }
 #body.home h1 {
 	background: none;
-	color: #000000;
+	color: #ff0000;
 	display: block;
 	font-family: 'Arial Black';
 	font-size: 70px;
@@ -126,11 +126,12 @@ h1 {
 /*----------------------------------------sidenav---------------------------------------*/
 
 .sidenav {
-    width: 130px;
+    width: 230px;
     position: fixed;
     z-index: 1;
-    top: 20px;
-    left: 10px;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
     background: #eee;
     overflow-x: hidden;
     padding: 8px 0;
@@ -144,9 +145,6 @@ h1 {
     display: block;
 }
 
-.sidenav a:hover {
-    color: #FF0000;
-}
 
 /*----------------------------------------gallery---------------------------------------*/
 
@@ -187,19 +185,19 @@ div.desc {
 }
 
 #footer {
-	background-color: #111111;
+	background-color: #000000;
 	min-height: 50px;
 	padding: 0;
 	width: 100%;
 	color: #FFFFFF;
-	float: left;
+	float: right;
 	font-family: Arial;
 	font-size: 15px;
 	font-weight: normal;
 	line-height: 15px;
 	margin: 0;
 	padding: 5px 0 0;
-	text-align: left;
+	text-align: right;
 }
 
 /*----------------------------------------phone---------------------------------------*/

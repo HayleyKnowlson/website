@@ -1,6 +1,34 @@
+<!doctype html>
 <html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ace in the Hole</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
 <body>
+    <div id="header">
+        <ul>
+            <li>
+				<a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+				<a href="register.html">Register</a>
+            </li>
+            <li>
+                <a href="events.html">events</a>
+            </li>
+            <li>
+				<a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
 
+<div id="body" class="home">
+        <h1>Ace in the Hole Multisport Events</h1> 
 <p>Required fields are <b>bold</b></p>
 <form action="contact.php" method="post">
 <p><b>Your Name:</b> <input type="text" name="yourname" id="yourname"><br />
@@ -14,7 +42,7 @@
 <input type="radio" name="gender" value="other" id="value"> Other</p>
 
 <label for='formEvent[]'><b>What Event are You Registering For?</b> (hold CTRL to select multiple events)</label><br>
-<select multiple="multiple" name="event">
+<select multiple="multiple" name="event[]">
 <option value="long">Long Course Triathlon -- $240</option>
 <option value="olympic">Olympic -- $110</option>
 <option value="10k">10K -- $50</option>
@@ -24,10 +52,23 @@
 <option value="volunteer">I am registering as a Volunteer</option>
 </select>
 
-<p><b>Comments:</b><br />
+<p><b>Your comments:</b><br />
 <textarea name="comments" rows="10" cols="40"></textarea></p>
 
-<input type="submit" value="submit" formaction="thanks.html">
+<input type="submit" value="Send it!">
 </form>
-</body>
-</html>
+</div>
+    
+
+
+<div class="clearfix">
+        </div>
+
+<div id="footer">
+				<p>&copy; 2018 by Hayley Knowlson. All rights reserved.</p>
+		</div>
+    </body>
+    </html>
+
+            
+
