@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ace in the Hole</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+    <div id="header">
+        <ul>
+            <li>
+				<a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+				<a href="register.html">Register</a>
+            </li>
+            <li>
+                <a href="events.html">Events</a>
+            </li>
+            <li>
+				<a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+<div id="body" class="home">
+    <h1>Ace in the Hole Multisport Events</h1>
+    <span><a href="register.html" class="register">Register</a></span>
+<h2>ABOUT ACE IN THE HOLE MULTISPORT EVENTS</h2>
+
+<p>Ace in the Hole Multisport Events is proud to offer running and triathlon events to athletes of all shapes and sizes, national origins, sexual orientations and cultural backgrounds. We offer Events for Every Body.</p>
+    
+<h2>Packet Pick Up</h2>
+    <p>All packet pick ups will occur at<br><b>Why Worry Racing<br>123 NW Everett<br>Portland OR<br></b>
+    Pick up hours are <b>Thursday 8-5</b> and <b>Friday 9-noon</b>.<br>
+    No day of event packet pick up!</p>
+    
+<h2>Cost Includes</h2>
+    <ul>
+        <li>Food & Beer</li>
+        <li>Access to the weekend's live entertainment & Fitness Expo</li>
+        <li>Commemorative Finisher medal</li>
+        <li>Accurate Chip Timing for competitive races</li>
+        <li>Ace in the Hole Multisport Weekend Tech Shirt</li>
+        <li>Post-event party & entertainment</li>
+    </ul>
+
+<h2>REGISTRATION</h2>
+  
+<ul id="myUL">
+    <li><span
+        class="caret">Long Course -- $240</span>
+    <ul class="nested">
+        <li><b>Swim - 1.2mi</b> - Participants will make two counter-clockwise loops. Large buoys will mark the turn points. Kayakers will be positioned on the water to support the swimmers. Medical support will be present on the beach.<br>
+        <b>Bike - 58 Miles</b> - A scenic point-to-point course that travels over gently rolling hills prior to three hard climbs. The bike course will be marked with large directional signage and there will be course marshals at key intersections to help direct you.<br>
+        <b>Run - 13.1mi</b> - A mostly flat loop course on widely paved bike paths that traverse through and around this beautiful and scenic destination resort (two hills total with a minimal elevation gain).</li>
+        </ul></li>
+    </ul>
+    
+<ul id="myUL">
+    <li><span
+        class="caret">Olypmic -- $110</span>
+    <ul class="nested">
+        <li><b>Swim – 1,500 meters</b> - Participants will make two counter-clockwise loops. Large buoys will mark the turn points. Kayakers will be positioned on the water to support the swimmers. Medical support will be present on the beach.<br>
+        <b>Bike – 28mi</b> - A scenic point-to-point course that travels over gently rolling hills. The bike course will be marked with large directional signage and course marshals will be present at key intersections. <br>
+        <b>Run – 10K</b> - A mostly flat loop course on widely paved bike paths that traverse through and around this beautiful and scenic destination resort (one hill total with a minimal elevation gain).</li>
+        </ul></li>
+    </ul>
+    
+<ul id="myUL">
+    <li><span
+        class="caret">10K -- $50</span>
+    <ul class="nested">
+        <li>The 10K event starts and finishes in the Athletes Village. The paths are approximately 6 ft wide, perfectly paved and wind around through the forest. Each course has only two small hills with a minimal elevation gain to navigate and a fast downhill to flat finish to the roaring cheers of the crowd.</li>
+        </ul></li>
+    </ul>
+    
+    <ul id="myUL">
+    <li><span
+        class="caret">Half Marathon -- $75</span>
+    <ul class="nested">
+        <li>Half-Marathon (13.1-miles) - Half-Marathon event starts and finishes in the Athletes Village to the cheers of the enthusiastic crowd. Once finished, runners can enjoy the finish line festivities, including the Sports & Fitness Expo and live entertainment. Post-race refreshments will be provided and the Awards Ceremony for the Half-Marathon will begin once the results have been certified</li>
+        </ul></li>
+    </ul>
+    <ul id="myUL">
+    <li><span
+        class="caret">Sprint -- $90</span>
+    <ul class="nested">
+        <li>Course will offer a 1-loop 1/2 mile swim, the exact same 28 mile Bike Course as the Olympic distance and a 5km run.</li>
+        </ul></li>
+    </ul>
+    <ul id="myUL">
+    <li><span
+        class="caret">Try-a-Tri -- $65</span>
+    <ul class="nested">
+        <li>This novice race is designed for the first time triathlete, those new to the sport, our Junior Triathletes. The swim is a shorter, more manageable 1/4 mile distance, (instead of the standard 1/2-mile Sprint distance swim), 10 mile bike ride (vs 12 miles and it's a 2 loop course making it very spectator friendly!) and a flat 2 mile run (vs 3 mile sprint course).</li>
+        </ul></li>
+    </ul>
+    
+</div>
+    
+<div class="sidenav">
+    <a class="weatherwidget-io" href="https://forecast7.com/en/45d52n122d68/portland/?unit=us" data-label_1="PORTLAND" data-label_2="WEATHER" data-theme="original" >PORTLAND WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+<div class="clearfix">
+        </div>
+
+<div id="footer">
+				<p>&copy; 2018 by Hayley Knowlson. All rights reserved.</p>
+		</div>
+    
+    <script>
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+</script>
+    </body>
+    </html>
+
+            
+
