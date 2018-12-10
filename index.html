@@ -30,42 +30,78 @@
 <div id="body" class="home">
         <h1>Ace in the Hole Multisport Events</h1>
         <span><a href="register.html" class="register">Register</a></span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean convallis laoreet libero non tempus. Vivamus sodales sem velit, non egestas eros blandit ut. Nam sodales nisl vitae justo congue efficitur. Mauris vulputate tincidunt dui, suscipit dapibus lorem scelerisque at.</p>
-    <div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="images/Placeholder.png">
-      <img src="images/Placeholder.png" alt="Group Running" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
+        <p>Ace in the Hole Multisport Events is proud to offer running and triathlon events to athletes of all shapes and sizes, national origins, sexual orientations and cultural backgrounds. We offer Events for Every Body.<br>
+            The Annual Ace in the Hole MultiSport Weekend is a legendary event in the Oregon triathlon and running community. It has become a traditional destination race for athletes from across the nation. 
+
+There is something for every level of athletic ability. The weekend includes a first timer triathlon, a sprint, Olympic, and Half-Iron triathlons and 10K and Half marathon runs. Come to experience your first race or come to compete to win, but make sure you come to have fun!
+</p>
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="images/group_running.jpg" style="width:100%">
 </div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="images/Placeholder.png">
-      <img src="images/Placeholder.png" alt="Running in a race" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="images/running_free.jpg" style="width:100%">
 </div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="images/Placeholder.png">
-      <img src="images/Placeholder.png" alt="Northern Lights" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="images/running_race.jpg" style="width:100%">
+</div>
+      
+      <div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="images/swimming.jpg" style="width:100%">
+</div>
+      
+      <div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="images/marathon.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
     
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="images/Placeholder.png">
-      <img src="images/Placeholder.png" alt="Rainbow freerunning" width="600" height="400">
-    </a>
-    <div class="desc">Add a description of the image here</div>
-  </div>
-</div>
+    <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
 </div>
 
 <div class="sidenav">
@@ -76,6 +112,10 @@
 
 <div class="clearfix">
         </div>
+
+<!-- Icons -->
+<a href="https://www.facebook.com/cas22cascade" class="fa fa-facebook"></a>
+<a href="https://twitter.com/pcccas222" class="fa fa-twitter"></a>
 
 <div id="footer">
 				<p>&copy; 2018 by Hayley Knowlson. All rights reserved.</p>

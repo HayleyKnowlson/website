@@ -12,8 +12,6 @@ $gender   = check_input($_POST['gender']);
 $event = check_input($_POST['event']);
 $enumber    = check_input($_POST['enumber']);
 $ename    = check_input($_POST['ename']);
-$egender    = check_input($_POST['egender']);
-$eage    = check_input($_POST['eage']);
 $comments = check_input($_POST['comments'], "Write your comments");
 
 /* If e-mail is not valid show error message */
